@@ -1,6 +1,6 @@
 namespace _036_war_preparations;
 
-public enum SwordMaterials
+public enum Materials
 {
     Wood,
     Bronze,
@@ -9,7 +9,7 @@ public enum SwordMaterials
     Binarium
 };
 
-public enum SwordGemStones
+public enum GemStones
 {
     Emerald,
     Amber,
@@ -21,8 +21,8 @@ public enum SwordGemStones
 
 public record Sword
 (
-    SwordMaterials SwordMat, 
-    SwordGemStones SwordGemSt,
+    Materials SwordMaterial, 
+    GemStones SwordGemStone,
     float Length,
     float CrossguardWidth
 );
